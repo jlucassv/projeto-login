@@ -272,6 +272,9 @@ form button:hover{
     background: transparent;
     width: 80vw;
     transform: scale(1.1);
+    margin-bottom: 70px;
+    padding-top: 20px;
+}
   }
   body {
     flex-direction: column;
