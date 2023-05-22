@@ -153,9 +153,9 @@ function adjustContainerMargin() {
   var isKeyboardOpen = window.innerHeight < window.outerHeight;
 
   if (isKeyboardOpen) {
-    buttons.style.marginTop = '100px';
+    buttons.style.paddingTop = '100px';
   } else {
-    buttons.style.marginTop = '-80px';
+    buttons.style.paddingTop = '0px';
   }
 }
 
