@@ -271,7 +271,6 @@ form button:hover{
     box-shadow: none;
     background: transparent;
     width: 80vw;
-    margin-bottom: 100px;
     transform: scale(1.1);
   }
   body {
