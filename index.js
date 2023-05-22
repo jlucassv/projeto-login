@@ -148,17 +148,17 @@ function validatePasswordConfirmation(){
 }
 
 // mobile 
-function adjustContainerMargin() {
+function adjustPage() {
   var container = document.querySelector('.buttons');
   var initialHeight = window.innerHeight;
 
   window.addEventListener('resize', function() {
     var currentHeight = window.innerHeight;
     if (currentHeight < initialHeight) {
-      container.style.marginTop = '100px';
+      container.style.marginTop = '40px';
     } else {
-      container.style.marginTop = '0';
+      container.style.marginTop = '-100px';
     }
   });
 }
-adjustContainerMargin();
+adjustPage();
