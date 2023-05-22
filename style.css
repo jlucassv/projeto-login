@@ -272,16 +272,15 @@ form button:hover{
     background: transparent;
     width: 80vw;
     transform: scale(1.1);
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     padding-top: 20px;
-}
+  }
+  .buttons {
+  padding-top: 30px;
   }
   body {
     flex-direction: column;
     justify-content: center;
-  }
-  form {
-    margin-left: 0;
   }
 }
 
