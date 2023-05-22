@@ -147,4 +147,17 @@ function validatePasswordConfirmation(){
   }
 }
 
+// mobile 
+function adjustContainerMargin() {
+  var buttons = document.querySelector('.buttons');
+  var isKeyboardOpen = window.innerHeight < window.outerHeight;
 
+  if (isKeyboardOpen) {
+    buttons.style.marginTop = '30px';
+  } else {
+    buttons.style.marginTop = '-60px';
+  }
+}
+
+window.addEventListener('resize', adjustContainerMargin);
+adjustContainerMargin();
