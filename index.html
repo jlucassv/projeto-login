@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>InovaTech</title>
+</head>
+<body>
+  <div class="content">
+    <h1> InovaTech</h1>
+    <p>A <strong>InovaTech</strong> é uma empresa que está comprometida em trazer inovação e tecnologia para o seu negócio. Com soluções personalizadas para atender às suas necessidades específicas. Não perca a oportunidade de fazer parceria com a <strong>InovaTech</strong>  e leve sua empresa para o <strong>próximo nível!</strong></p>
+    <button>Seja mais um colaborador!</button>
+  </div>
+  
+  <div class="container">
+    <div class="buttons">
+      <div class="btnHover"></div>
+      <button id="signInButton">Login</button>
+      <button id="signUpButton">Cadastre-se</button>
+    </div>
+    
+    <form id="signIn">
+      <i class="fa-solid fa-user"></i>
+      <input type="email" name="email"  id="emailSignIn" placeholder="Email" required autocomplete="off">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" name="password" id="senha" placeholder="Senha" required autocomplete="off">
+      <i class="fas fa-eye" id="eyeIcon"></i>
+
+      <div class="checkbox">
+        <input type="checkbox" name="remember" id="checkbox">
+        <label for="checkbox">Lembre de mim</label>
+      </div>
+      <button type="submit">Login</button>
+      <div class="linkPassword">
+        <a href="#">Esqueceu a senha?</a>      
+      </div>
+    </form>
+   
+    <form id="signUp">
+      <i class="fas fa-user-circle"></i>
+      <input type="text" name="text" id="name" class="inputToValidate" placeholder="Nome" required autocomplete="off" oninput="validarNome()">
+      <span class="spans">Este campo deve conter pelo menos 3 caracteres.</span>
+      <i class="fa-solid fa-user"></i>
+      <input type="email" name="email" id="emailSignUp" class="inputToValidate" placeholder="Email" required autocomplete="off" oninput="validateEmail()">
+      <span class="spans">Utilize um email válido.</span>
+      <i class="fa-solid fa-lock"></i>
+      <input type="text" name="text" id="passwordConfirmation" class="inputToValidate" placeholder="Senha" required autocomplete="off" oninput="validatePassword()">
+      <span class="helpContainer">
+      <i><img src="./img/ajuda.png" alt="help" class="helpIcon"></i>
+        <ul class="items">
+          <li class="item">A senha deve conter :</li>
+          <li class="item">Ao menos 8 caracteres</li>
+          <li class="item">Ao menos 1 letra maiúscula</li>
+          <li class="item">Ao menos 1 caractere especial</li>
+        </ul>
+      </span>
+      <i class="fas fa-unlock"></i>
+      <input type="text" name="text" id="passwordConfirmation2" class="inputToValidate" placeholder="Confirme sua senha" required autocomplete="off" oninput="validatePasswordConfirmation()">
+      <span class="spans">As senhas devem ser iguais.</span>
+      
+      <div class="checkbox">
+        <input type="checkbox" name="terms" id="checkbox2">
+        <label for="checkbox2">Aceito todos os Termos</label>
+      </div>
+      
+
+      <button type="submit">Cadastrar</button>
+
+    </form>
+  </div>
+  
+  <script src="https://kit.fontawesome.com/7dd30168df.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
