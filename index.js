@@ -150,14 +150,17 @@ function validatePasswordConfirmation(){
 // mobile 
 function adjustPage() {
   var container = document.querySelector('.buttons');
+  const tittle = document.querySelector('.container h1')
   var initialHeight = window.innerHeight;
 
   window.addEventListener('resize', function() {
     var currentHeight = window.innerHeight;
     if (currentHeight < initialHeight) {
       container.style.marginTop = '40px';
+      tittle.style.marginTop = '200px'
     } else {
-      container.style.marginTop = '-100px';
+      container.style.marginTop = '';
+      tittle.style.marginTop = ''
     }
   });
 }
