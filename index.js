@@ -149,15 +149,16 @@ function validatePasswordConfirmation(){
 
 // mobile 
 function adjustContainerMargin() {
-  var buttons = document.querySelector('.buttons');
-  var isKeyboardOpen = window.innerHeight < window.outerHeight;
+  var container = document.querySelector('.buttons');
+  var initialHeight = window.innerHeight;
 
-  if (isKeyboardOpen) {
-    buttons.style.paddingTop = '100px';
-  } else {
-    buttons.style.paddingTop = '0px';
-  }
+  window.addEventListener('resize', function() {
+    var currentHeight = window.innerHeight;
+    if (currentHeight < initialHeight) {
+      container.style.marginTop = '100px';
+    } else {
+      container.style.marginTop = '0';
+    }
+  });
 }
-
-window.addEventListener('resize', adjustContainerMargin);
 adjustContainerMargin();
