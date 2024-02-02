@@ -1,7 +1,7 @@
 <h1 align="center">Tela de Login Dinâmica </h1>
 
 ## Sobre
-<p> Com esse projeto pude fazer uma tela de login dinâmica, podendo migrar para tela de "Login" e "Cadastro" sem sair da página, deixando ágil para o usuário e, por meio do JavaScript, fiz a validação de todo formulário!</p>
+<p> Com esse projeto pude fazer uma tela de login dinâmica, podendo migrar para tela de "Login" e "Cadastro" sem sair da página, deixando ágil para o usuário e, por meio do JavaScript, fiz a validação de todo formulário! Acesse no Git Hub Pages para ver mais! https://jlucassv.github.io/projeto-login/ </p>
 
 ## Tecnologias
 * JavaScript
